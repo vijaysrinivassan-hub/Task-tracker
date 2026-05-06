@@ -4,11 +4,12 @@ button { cursor: pointer; font-family: inherit; }
 input { font-family: inherit; }
 
 .app { height: 100vh; display: flex; flex-direction: column; padding: 16px; gap: 12px; }
-.topbar { display: flex; gap: 8px; align-items: center; }
+.topbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .topbar h1 { font-size: 18px; font-weight: 600; margin-right: auto; }
 .topbar input { background: #1a1d24; border: 1px solid #2a2e38; color: #e7e9ee; padding: 8px 10px; border-radius: 8px; outline: none; }
 .topbar button { background: #3b82f6; border: 0; color: white; padding: 8px 14px; border-radius: 8px; font-weight: 500; }
 .topbar button.ghost { background: #1a1d24; border: 1px solid #2a2e38; color: #e7e9ee; }
+.topbar .user { font-size: 12px; color: #8b93a7; margin-left: 8px; }
 
 .board { flex: 1; display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden; padding-bottom: 8px; }
 .col { flex: 0 0 300px; background: #161921; border: 1px solid #252934; border-radius: 12px; display: flex; flex-direction: column; max-height: 100%; }
@@ -27,3 +28,12 @@ input { font-family: inherit; }
 .task .text { flex: 1; word-break: break-word; }
 .task .x { background: transparent; border: 0; color: #8b93a7; font-size: 14px; }
 .empty { color: #6b7280; font-size: 12px; padding: 12px; text-align: center; }
+
+.login-wrap { height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.login-card { background: #161921; border: 1px solid #252934; border-radius: 14px; padding: 28px; width: 100%; max-width: 380px; display: flex; flex-direction: column; gap: 12px; }
+.login-card h1 { font-size: 22px; text-align: center; }
+.login-card .sub { text-align: center; color: #8b93a7; font-size: 13px; margin-bottom: 8px; }
+.login-card input { background: #0f1115; border: 1px solid #2a2e38; color: #e7e9ee; padding: 11px 12px; border-radius: 9px; outline: none; font-size: 14px; }
+.login-card button { background: #3b82f6; border: 0; color: white; padding: 11px; border-radius: 9px; font-weight: 600; font-size: 14px; }
+.login-card .msg { background: #1a1d24; color: #f59e0b; padding: 9px; border-radius: 8px; font-size: 12px; text-align: center; }
+.login-card .toggle { text-align: center; color: #3b82f6; font-size: 13px; cursor: pointer; padding: 6px; }
